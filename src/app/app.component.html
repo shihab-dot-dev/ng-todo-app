@@ -186,6 +186,36 @@
       On top we add spartan/ui/helm(et) with shadcn-like styles.
     </p>
   </div>
+  <!-- Accordion example -->
+  <div hlmAccordion>
+    <div hlmAccordionItem>
+      <button hlmAccordionTrigger>
+        Is it accessible?
+        <ng-icon name="lucideChevronDown" hlm hlmAccIcon />
+      </button>
+      <hlm-accordion-content>Yes. It adheres to the WAI-ARIA design pattern.</hlm-accordion-content>
+    </div>
+
+    <div hlmAccordionItem>
+      <button hlmAccordionTrigger>
+        Is it styled?
+        <ng-icon name="lucideChevronDown" hlm hlmAccIcon />
+      </button>
+      <hlm-accordion-content>
+        Yes. It comes with default styles that match the other components' aesthetics.
+      </hlm-accordion-content>
+    </div>
+
+    <div hlmAccordionItem>
+      <button hlmAccordionTrigger>
+        Is it animated?
+        <ng-icon name="lucideChevronDown" hlm hlmAccIcon />
+      </button>
+      <hlm-accordion-content>
+        Yes. It's animated by default, but you can disable it if you prefer.
+      </hlm-accordion-content>
+    </div>
+  </div>
   <div class="content font-black">
     <div class="left-side">
       <svg
