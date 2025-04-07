@@ -1,0 +1,20 @@
+meta {
+  name: testers
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://reqres.in/api/users
+  body: none
+  auth: inherit
+}
+
+headers {
+  sec-ch-ua-platform: "macOS"
+  Referer: https://reqres.in/
+  User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+  sec-ch-ua: "Chromium";v="134", "Not:A-Brand";v="24", "Google Chrome";v="134"
+  Content-Type: application/json
+  sec-ch-ua-mobile: ?0
+}
