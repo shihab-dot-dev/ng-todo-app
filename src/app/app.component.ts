@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { RouterOutlet } from "@angular/router";
+import { RouterState } from "@angular/router";
 
 @Component({
   selector: "app-root",
@@ -18,6 +19,8 @@ function test() {
   return arr.filter((el) => {
     return el > 15;
   });
+
+  console.log("hey", test());
 }
 
 function testCol() {
@@ -27,3 +30,10 @@ function testCol() {
   });
 }
 console.log("returned value is", test());
+
+testCol();
+
+const arr = [2, 4, 7, 8, 9, 10];
+arr.map((el, i) => {
+  console.log(`ele is ${el} and index is ${i}`);
+});
